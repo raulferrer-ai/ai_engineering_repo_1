@@ -1,0 +1,22 @@
+[project]
+name = "ai-engineering"
+version = "0.1.0"
+description = "Semana 1 — Python moderno para AI Engineering"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "mypy>=1.10",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["domain*", "services*", "adapters*"]
+
+[tool.mypy]
+strict = true
