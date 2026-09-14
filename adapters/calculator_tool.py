@@ -1,8 +1,3 @@
-"""Implementación concreta de ToolExecutor. No hereda de ToolExecutor
-de forma explícita: conforma por estructura (duck typing tipado).
-"""
-
-
 class CalculatorTool:
     def execute(self, args: dict[str, str]) -> str:
         operation = args.get("operation", "")

@@ -1,7 +1,5 @@
 """Result[T]: modela una operación que puede tener éxito o fallar,
 sin recurrir a excepciones para el flujo esperado de negocio.
-
-Equivalente conceptual a Result<T, Error> en Swift.
 """
 
 from typing import Generic, TypeVar
@@ -15,7 +13,6 @@ class Result(Generic[T]):
         self.error = error
 
     def is_ok(self) -> bool:
-        """True si la operación fue exitosa (no hay error)."""
         return self.error is None
 
     @classmethod

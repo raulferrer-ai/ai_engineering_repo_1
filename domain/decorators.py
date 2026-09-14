@@ -9,9 +9,8 @@ R = TypeVar("R")
 
 
 def timing(fn: Callable[P, R]) -> Callable[P, R]:
-    """Mide e imprime el tiempo de ejecución de la función decorada,
-    sin alterar su resultado ni su firma.
-    """
+    """Mide e imprime el tiempo de ejecución, sin alterar resultado
+    ni firma de la función decorada."""
 
     @wraps(fn)
     def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:

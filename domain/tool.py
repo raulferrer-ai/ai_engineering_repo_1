@@ -1,7 +1,6 @@
-"""Definición de una tool que un agente puede invocar.
-
-Inmutable a propósito: una vez definida, la configuración de una tool
-no debería cambiar durante la ejecución de un agente.
+"""Definición de una tool que un agente puede invocar. Inmutable
+a propósito (frozen=True): la configuración de una tool no debería
+cambiar durante la ejecución de un agente.
 """
 
 from dataclasses import dataclass, field

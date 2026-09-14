@@ -1,8 +1,6 @@
-"""Excepciones propias del dominio.
-
-Se reservan para errores de programación/configuración, no para fallos
-esperados y recuperables (esos se modelan con Result[T]).
-"""
+"""Excepciones propias del dominio: reservadas para errores de
+programación/configuración, no para fallos esperados y recuperables
+(esos se modelan con Result[T])."""
 
 
 class RetryExhaustedError(Exception):

@@ -1,10 +1,3 @@
-"""Registro de tools disponibles para un agente.
-
-Depende únicamente del Protocol ToolExecutor, no de las clases
-concretas — así puedes registrar cualquier objeto que "tenga la forma"
-correcta, sin acoplarte a CalculatorTool/SearchTool.
-"""
-
 from domain.protocols import ToolExecutor
 from domain.tool import Tool
 
